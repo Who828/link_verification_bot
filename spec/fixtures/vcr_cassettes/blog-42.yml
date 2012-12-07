@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://blog-42-staging.herokuapp.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - max-age=0, private, must-revalidate
+      content-type:
+      - text/html; charset=utf-8
+      date:
+      - Fri, 07 Dec 2012 05:28:43 GMT
+      etag:
+      - ! '"c390c2c49613c15da75c97c6afda87e9"'
+      server:
+      - thin 1.4.1 codename Chromeo
+      set-cookie:
+      - _blog_engine_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWNlZjM2MjUzNDJiMzQ3Y2YzMzY3ZTdhYzQwMDRkYjRlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTd2V09yeG9OVmppTFVUNWRhaGxuZzl6ZmtZS3IwcXJnL2pmeHBvWDVHMlU9BjsARg%3D%3D--fb4c92d551a526c0dc75cec0b563d83bfdc2d190;
+        path=/; HttpOnly
+      x-rack-cache:
+      - miss
+      x-request-id:
+      - 1cca7ca6a6d661423c455007c72ec7e9
+      x-runtime:
+      - '0.063861'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html>\n<html>\n<head>\n  <title>BlogEngine</title>\n  <link
+        href=\"/assets/application-37f5d1a36fcaaae5c74e1cde934c5542.css\" media=\"all\"
+        rel=\"stylesheet\" type=\"text/css\" />\n  <script src=\"/assets/application-ce29ff13f329482ce456ad6322c627cb.js\"
+        type=\"text/javascript\"></script>\n  <meta content=\"authenticity_token\"
+        name=\"csrf-param\" />\n<meta content=\"7vWOrxoNVjiLUT5dahlng9zfkYKr0qrg/jfxpoX5G2U=\"
+        name=\"csrf-token\" />\n</head>\n<body>\n\n\n<h1>Hello</h1>\n  <p>\n    Please
+        login here and authorize this app\n    <a href= '/auth/google'> Sign in with
+        your Google Account </a>\n  </p>\n\n\n</body>\n</html>\n"
+    http_version: '1.1'
+  recorded_at: Fri, 07 Dec 2012 05:28:45 GMT
+recorded_with: VCR 2.3.0
